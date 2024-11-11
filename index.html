@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1>this is my new project</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Today</title>
+    <link rel="stylesheet" href="./styles/indexStyles.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+   <div class="wrapper">
+    <main>
+      <section class="hero">
+        <!-- <div class="hero-img">
+              <img src="./images/donation5.jpg" alt="">
+          </div> -->
+        <div class="overlay">
+          <div class="overlayText container text-white text-center">
+            <h1 class="font-bold leading-tight mb-4">
+              Let's Help Those Who Are <br />
+              More In Need
+            </h1>
+            <p class="mb-6">
+              Help others by donating to charities that are committed to improving
+              the lives of those in need.
+            </p>
+            <button
+              class="donate-btn border-0 px-5 py-2 rounded text-lg text-white font-medium"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </section>
+  
+      <section class="donationPay container">
+        <div class="titleBox">
+          <h2>Donate Today</h2>
+          <p>Donate to the charity of your choice.</p>
+        </div>
+        <div
+          class="donationBox w-full h-full mb-10 flex flex-col justify-center items-center"
+        >
+          <div
+            class="donationOptions flex h-auto w- mb-8 flex-wrap items-center justify-between"
+          >
+            <button>50tk</button>
+            <button>100tk</button>
+            <button>200tk</button>
+            <button>500tk</button>
+            <button>1000tk</button>
+            <button>5000tk</button>
+          </div>
+          <div class="donationCustom w-full flex justify-center mb-6">
+            <input
+              type="number"
+              min="10"
+              class="outline-none"
+              placeholder="Other Amount (Taka)"
+            />
+          </div>
+          <button
+            type="submit"
+            class="donate-btn border-0 px-5 py-2 rounded text-lg text-white font-medium"
+          >
+            Donate Now
+          </button>
+        </div>
+      </section>
+  
+      <section class="donationPlan container">
+        <div class="titleBox">
+          <h2>Our Donation Plan</h2>
+          <p>Our commitment to improving the lives of those in need.</p>
+        </div>
+        <div class="planCard grid mt-6">
+          <div class="card dpBgBlue">
+            <img class="mb-4" src="/icons/food.png" alt="" />
+            <h3 class="mb-4 font-bold text-lg">Food For a Family</h3>
+            <p>
+              Bring forward your helping hand to assist our organization to help
+              the needy and victims of climate calamities. Foods and goods are
+              provided at the time of need.
+            </p>
+          </div>
+          <div class="card dpBgPink">
+            <img class="mb-4" src="/icons/shelter.png" alt="" />
+            <h3 class="mb-4 font-bold text-lg">Shelter For a Family</h3>
+            <p>
+              Shelter is one the five basic needs of human life. A family must
+              need a shelter for living. With your assist we built shelters for
+              around 500 families and building.
+            </p>
+          </div>
+          <div class="card dpBgPurple">
+            <img class="mb-4" src="/icons/Frame-1.png" alt="" />
+            <h3 class="mb-4 font-bold text-lg">Education For a Child</h3>
+            <p>
+              Education is the most basic human right. Our organization provides
+              education to children in need. Our goal is to create a brighter
+              future for our children.
+            </p>
+          </div>
+        </div>
+        <div class="planBlogs">
+          <div class="blog">
+            <div class="blogText">
+              <h2>Their lives depends on your donation</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi,
+                ratione fugiat nihil cum aut ipsa quas eveniet ducimus blanditiis
+                quibusdam, molestiae id quos expedita delectus asperiores dolorum
+                provident ab nesciunt?
+              </p>
+              <button class="donate-btn border-0 px-5 py-2 rounded text-lg text-white font-medium">How to Contribute?</button>
+            </div>
+            <div class="blogImg">
+              <img src="/images/donation7.jpg" alt="" />
+            </div>
+          </div>
+          <div class="blog">
+            <div class="blogImg">
+              <img src="/images/donation9.jpg" alt="" />
+            </div>
+            <div class="blogText">
+              <h2>They need us to survive</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                non quidem aspernatur enim maxime voluptatibus, consectetur
+                debitis. Ullam ipsa, voluptates, numquam dolore vero non debitis
+                velit dolores rerum, dolorum nam.
+              </p>
+              <button  class="donate-btn border-0 px-5 py-2 rounded text-lg text-white font-medium">Know more to Contribute</button>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="newsletter container">
+        <div class="titleBox">
+          <h2>Get Our Updates</h2>
+          <p>Stay updated with our latest news and events.</p>
+        </div>
+        <div class="emailBox">
+          <input type="email" name="email" placeholder="Enter Your Email...">
+          <button>Subscribe</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h4>Be Humble</h4>
+      <p>©2022-2024,2015. All rights reserved.</p>
+    </footer>
+   </div>
+  </body>
 </html>

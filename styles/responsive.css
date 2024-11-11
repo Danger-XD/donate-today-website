@@ -1,0 +1,129 @@
+/* Small devices (phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+  .container {
+    margin: 0px;
+    max-width: 100%;
+  }
+  .titleBox h2 {
+    font-size: 2rem;
+  }
+  .titleBox p {
+    font-size: 1rem;
+  }
+  /* hero section start here: */
+  .overlayText {
+    padding: 0px 10px;
+  }
+  .overlayText h1 {
+    font-size: 2.4rem;
+  }
+  .overlayText p {
+    font-size: 1.1rem;
+  }
+  /* donation option starts here: */
+  .titleBox h2 {
+    line-height: 3rem;
+  }
+  .donationPay {
+    padding: 6rem 10px;
+  }
+  /* donation plan starts here */
+  .donationPlan {
+    padding: 3rem 10px;
+  }
+  .planCard {
+    grid-template-columns: repeat(1, 18rem);
+  }
+  .blog {
+    flex-direction: column;
+  }
+  .blogImg {
+    width: 100%;
+    order: 1;
+    margin-bottom: 1.4rem;
+  }
+  .blogText {
+    width: 100%;
+    order: 2;
+  }
+  /* newsletter starts here: */
+  .newsletter {
+    padding: 3rem 10px 6rem;
+  }
+  .emailBox {
+    width: 100%;
+    padding: 4rem 0rem;
+  }
+  .emailBox button {
+    padding: 0px 1rem;
+  }
+  /* footer starts here */
+  footer {
+    padding: 6rem 2rem;
+}
+}
+
+/* Medium devices (small tablets, 576px to 767.98px) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    max-width: 520px;
+  }
+  /* donation option starts here: */
+  .donationPay {
+    padding: 10rem 10px;
+  }
+  /* donation plan starts here */
+  .donationPlan {
+    padding: 8rem 0rem;
+  }
+  .planCard {
+    grid-template-columns: repeat(2, 15rem);
+  }
+  .card {
+    padding: 30px 10px;
+  }
+  /* newsletter starts here */
+  .newsletter {
+    padding: 4rem 0rem;
+  }
+}
+
+/* Large devices (tablets, 768px to 991.98px) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+  /* hero section start here */
+  .overlayText h1 {
+    font-size: 3.5rem;
+  }
+  /* donation plan start here */
+  .donationPlan {
+    height: fit-content;
+    width: 100%;
+    padding: 8rem 1rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* newsletter starts here */
+  .newsletter {
+    padding: 4rem 0rem;
+  }
+}
+
+/* Extra large devices (desktops, 992px to 1199.98px) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra extra large devices (large desktops, 1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* responsive design ends here */
