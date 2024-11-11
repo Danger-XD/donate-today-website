@@ -1,234 +1,254 @@
-*,*::before,*::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-}
-html,body{
-    height: 100%;
-    width: 100%;
-}
-/* container class css for all types of screen */
-.container{
-    height: 100%;
-    margin: 0px auto;
-    width: 1140px;
-}
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
-/* Hero section starts here: */
-.hero{
-    background: url("/images/donation5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-}
-.overlay{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(transparent, rgb(0,0,0));
-}
-.overlayText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.overlayText h1{
-    font-size: 3.8rem;
-}
-.overlayText p{
-    font-size: 1.1rem;
-}
-.donate-btn{
-    cursor: pointer;
-    background-color: rgb(209, 80, 80);
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-/* Donation payment starts here:  */
-.donationPay{
-    height: fit-content;
-    width: 100%;
-    padding: 8rem 10rem 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {
+  height: 100%;
+  margin: 0 auto;
+  width: 1140px;
 }
-.donationOptions button{
-    font-size: 1.3rem;
-    font-weight: 700;
-    background-color: rgba(128, 128, 128, 0.267);
-    border-radius: 6px;
-    border: none;
-    height: 100px;
-    width: 120px;
-    margin: 5px;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.donationOptions button:hover{
-    border: rgb(209, 80, 80) 2px solid;
-    color:rgb(151, 55, 55);
-    background-color: rgba(209, 80, 80, 0.295);
+
+/* Hero Section */
+.hero {
+  background: url("/images/donation5.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 }
-.donationCustom input{
-    width: 65%;
-    border: none;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.267);
-    height: 2.2rem;
-    font-size:1.2rem;
-    padding-left: 10px ;
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(transparent, rgb(0, 0, 0));
 }
-.donationCustom input::placeholder{
-    text-align: center;
+
+.overlayText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+
+.overlayText h1 {
+  font-size: 3.8rem;
+}
+
+.overlayText p {
+  font-size: 1.1rem;
+}
+
+.donate-btn {
+  cursor: pointer;
+  background-color: rgb(209, 80, 80);
+}
+
+/* Donation Payment Section */
+.donationPay {
+  padding: 8rem 10rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donationOptions button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: rgba(128, 128, 128, 0.267);
+  border-radius: 6px;
+  border: none;
+  height: 100px;
+  width: 120px;
+  margin: 5px;
+}
+
+.donationOptions button:hover {
+  border: 2px solid rgb(209, 80, 80);
+  color: rgb(151, 55, 55);
+  background-color: rgba(209, 80, 80, 0.295);
+}
+
+.donationCustom input {
+  width: 65%;
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.267);
+  height: 2.2rem;
+  font-size: 1.2rem;
+  padding-left: 10px;
+  text-align: center;
+}
+
+/* Remove Spinner from Number Input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
-}
-/* donationPlan start here  */
-.donationPlan{
-    height: fit-content;
-    width: 100%;
-    padding: 8rem 10rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.planCard{
-    grid-template-columns: repeat(3,1fr);
-    gap: 32px;
-}
-.card{
-    border-radius: 6px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 40px 20px;
-}
-.dpBgBlue{
-    background-color: #C5D3E8;
-}
-.dpBgPink{
-    background-color: #F0C1E1;
-}
-.dpBgPurple{
-    background-color: #CB9DF0; 
-}
-.blog{
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem 0px;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-.blogImg,.blogText{
-    width: 45%;
-}
-.blogText h2{
-    font-weight: bold;
-    font-size: 2.2rem;
-    line-height: 40px;
-    margin-bottom: 16px;
-    
-}
-.blogText p{
-    font-size: 1rem;
-    line-height: 24px;
-    text-align: justify;
-    margin-bottom: 16px;
-    color: rgb(51, 51, 51);
-}
-.blogText button{
-    cursor: pointer;
-    background-color: rgb(209, 80, 80);
-}
-.blogImg img{
-    border-radius:6px ;
-    width: 100%;
-    height: 100%;
-}
-/* newsletter starts here */
-.newsletter{
-    height: fit-content;
-    width: 100%;
-    padding: 6rem 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.emailBox{
-    width: 80%;
-    background-color: #FFF7D1;
-    padding: 4rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.emailBox input{
-    border: none;
-    width: 50%;
-    height: 3.2rem;
-    padding-left: 10px;
-    border-radius: 6px 0 0 6px;
-}
-.emailBox button{
-    height: 3.2rem;
-    border-radius: 0 6px 6px 0;
-    background-color:rgb(209, 80, 80) ;
-    padding: 0px 1.4rem;
-    color: #fff;
-    font-weight: 500;
+/* Donation Plan Section */
+.donationPlan {
+  padding: 8rem 10rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* footer starts here */
-footer{
-    padding: 5rem 8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #001F3F ;
-    text-align: center;
-}
-footer h4{
-    color: rgb(209, 80, 80);
-    font-weight: bold;
-    font-size: 3rem;
-}
-footer p{
-    color: #fff;
-    font-size: 1.2rem;
+.planCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
 
+.card {
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+}
 
-/* reusable class starts here */
-.titleBox{
-    text-align: center;
-    margin-bottom: 30px;
+.dpBgBlue {
+  background-color: #c5d3e8;
 }
-.titleBox h2{
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+.dpBgPink {
+  background-color: #f0c1e1;
 }
-.titleBox p{
-    font-size: 1.1rem;
-    color: rgb(138, 138, 138);
+
+.dpBgPurple {
+  background-color: #cb9df0;
 }
-/* reusable class ends here */
+
+/* Blog Section */
+.blog {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.blogImg,
+.blogText {
+  width: 45%;
+}
+
+.blogText h2 {
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.blogText p {
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: justify;
+  margin-bottom: 16px;
+  color: rgb(51, 51, 51);
+}
+
+.blogText button {
+  cursor: pointer;
+  background-color: rgb(209, 80, 80);
+}
+
+.blogImg img {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailBox {
+  width: 80%;
+  background-color: #fff7d1;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailBox input {
+  border: none;
+  width: 50%;
+  height: 3.2rem;
+  padding-left: 10px;
+  border-radius: 6px 0 0 6px;
+}
+
+.emailBox button {
+  height: 3.2rem;
+  border-radius: 0 6px 6px 0;
+  background-color: rgb(209, 80, 80);
+  padding: 0 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #001f3f;
+  text-align: center;
+}
+
+footer h4 {
+  color: rgb(209, 80, 80);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Reusable Title Box */
+.titleBox {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titleBox h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.titleBox p {
+  font-size: 1.1rem;
+  color: rgb(138, 138, 138);
+}
